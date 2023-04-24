@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --mainColor:#192386;
+    --backGroundColor: #E4F1F5;
+}
+html{
+   font-size:  62.5%;
+}
+body{
+   font-size: 1.4rem;
+   font-family: 'Quicksand', sans-serif;
+   color: var(--mainColor);
+   background-color:white ;
+   margin:8px;
+}
+header,footer{
+    background-color: var(--backGroundColor);
+    margin-top: 25px;
+    margin-bottom: 10px;;
+}
+header{
+    padding-left: 30px ;
+    padding-right: 30px;
+}
+header >div button{
+   background-color: var(--backGroundColor);
+    border-style: none;
+    text-align: center;
+}
+button>a>h4 {
+    margin-top: 10px;
+    padding-right: 30px;
+}
+header a{
+    padding-right: 30px;;
+}
+section img{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+}
+footer{
+        justify-content:space-between;
+        align-items: flex-end;
+
+}
+footer > div{
+    height: 100%;
+  
+}
+p{
+    margin:0;
+    padding: 0;
+}
+footer :first-child  p{
+    padding: 40px;
+    align-items:baseline;
+}
+footer :nth-child(2) div{
+ margin-right: 40px ;
+}
+h1{
+    text-align: center;
+    width: 600px;
+    background-color:var(--backGroundColor);
+    border-radius: 50px 0px;
+    margin:0;
+    padding: 10px 0 10px ;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    font-size: 60px;
+}
+legend{
+    text-align: center;
+    font-size: 45px;
+}
+fieldset{
+    color:var(--mainColor);
+    border-width: 2px;
+    border-style: groove;
+    border-color: var(--mainColor);
+    background-color: var(--backGroundColor);
+    border-radius: 15px;
+}
+
+
+figure {
+    max-width: 600px;
+    margin-bottom: 30px;
+ 
+}
+form{
+    text-align: center;
+    
+}
+
+form fieldset{
+    margin:1px auto;
+    width: 600px;
+}
+fieldset label,input{
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+/***********************Class********************/
+
+.container{
+    display: flex;
+
+}
+.containerRow{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.containerColumn{
+    flex-direction: column;
+}
+
+.image-container{
+    position: relative;
+    display: inline-block;
+}
+.image-container > button {
+    position: absolute;
+    top:80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color:  #E4F1F5; */
+    color: var(--mainColor);
+    padding: 10px 20px;
+    border: solid 1px var(--mainColor);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: -1em 0 .4em var(--mainColor);
+}
+
+.container.containerColumn {
+    align-items: flex-start;
+    margin-left: 60px;
+}
+.marginSignIn.flexItem2 {
+    /* margin-right: 50px; */
+    padding-right: 10px;
+    flex: 2;
+}
+
+/**********************ID*********************/
+#alignementBas{
+    justify-content: space-between;
+    align-items:flex-end;
+}
+#contact {
+ justify-content: flex-start;
+}
+#contact > div, #contact > div button{
+    margin-left: 10px;
+}
+ #submit{
+    background-color: var(--backGroundColor);
+    color: var(--mainColor);
+    border:solid 1px var(--mainColor);
+    box-shadow:-10px 0 4px#192386 ;
+
+}
+section img #smaller{
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-top: 50px;
+    max-width: 30%;
+}
